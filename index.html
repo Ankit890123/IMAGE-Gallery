@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="main-image">
+            <img id="main-img" src="image1.jpg" alt="Main Image">
+        </div>
+        <div class="thumbnails">
+            <img src="img/image.jpeg" alt="Image 1" onclick="showImage(0)">
+            <img src="img/image1.jpg" alt="Image 2" onclick="showImage(1)">
+            <img src="img/image2.jpeg" alt="Image 3" onclick="showImage(2)">
+            <img src="img/image3.jpg" alt="Image 4" onclick="showImage(3)">
+            <img src="img/image4.jpg" alt="Image 5" onclick="showImage(4)">
+            <img src="img/image5.jpg" alt="Image 6" onclick="showImage(5)">
+            <img src="img/image6.jpg" alt="Image 7" onclick="showImage(6)">
+         
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
